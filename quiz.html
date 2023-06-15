@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<!--
+			Silvi Patel
+			CSCE 102 - 001
+			May 24th, 2023
+		-->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div id="content">
+			<header>
+				<h1>Silvi Patel</h1>
+				<nav id="main-nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="quiz.html">Quiz</a></li>
+						<li><a href="contact.html">Contact Me</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<div class="columns" id="main-content">
+					<section class="column">
+						<h2>Web Development Quiz</h2>
+						<p>
+							<label for="question-1">What does CSS Stand for?</label>
+							<select id="question-1">
+								<option value="0">Competing Styling Sheet</option>
+								<option value="0">Complete Style Sheet</option>
+								<option value="1">Cascading Style Sheets</option>
+								<option value="0">Complete Sheets</option>
+							</select>
+						</p>
+						<p>
+							<label for="question-2">Is HTML a programming language?</label>
+							<select id="question-2">
+								<option value="0">No, it's a styling language</option>
+								<option value="1">No, it's a markup language</option>
+								<option value="0">Yes it is</option>
+								<option value="0">No it's not a language</option>
+							</select>
+						</p>
+						<p>
+							<label for="question-3">How is bold represented in HTML?</label>
+							<select id="question-3">
+								<option value="1">&lt; strong &gt;</option>
+								<option value="0">&lt; em &gt;</option>
+								<option value="0">&lt; i &gt;</option>
+								<option value="0">Bold</option>
+							</select>
+						</p>
+						<p>
+							<label for="question-4">What are the sections of HTML?</label>
+							<select id="question-4">
+								<option value="0">Head and bottom</option>
+								<option value="0">Head, body, and bottom</option>
+								<option value="1">Head and body</option>
+								<option value="0">Header and footer</option>
+							</select>
+						</p>
+						<p>
+							<label for="question-5">What is JavaScript used for?</label>
+							<select id="question-5">
+								<option value="0">For styling purposes</option>
+								<option value="1">To create interactive elements</option>
+								<option value="0">For creating the webpage</option>
+								<option value="0">Javascript is fake</option>
+							</select>
+						</p>
+						<p>
+							<input type="checkbox" id="terms">
+							<label for="terms">Click to Submit</label>
+						</p>
+						<p>
+							<button onclick="showResults()">Submit</button>
+						</p>
+					</section>
+					<section class="column">
+							<h2>Quiz Results</h2>
+								<span id="results" class="hidden"></span>
+								<p id="grade2"></p>
+								<p>Question 1 - </p>
+								<p>Question 2 - </p>
+								<p>Question 3 - </p>
+								<p>Question 4 - </p>
+								<p>Question 5 - </p>
+						</div>
+					</section>
+				</div>
+			</main>
+			</div>
+			<footer>
+				<p>&copy; silvipatel</p>
+			</footer>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
